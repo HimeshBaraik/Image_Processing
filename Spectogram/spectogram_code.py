@@ -6,7 +6,7 @@ def solution(audio_path):
     ############################
     ############################
     # Load an audio file (replace 'your_audio_file.wav' with the actual file path)
-    #audio_file = 'metal_banging11.mp3'
+    
     y, sr = librosa.load(audio_path)
 
     # Compute the magnitude spectrum using FFT
@@ -25,10 +25,5 @@ def solution(audio_path):
 
     else:
         obj = 'cardboard'
-    ############################
-    ############################
-    ## comment the line below before submitting else your code wont be executed##
-    # pass
-    # class_name = 'cardboard'
-    # return class_name
+        
     return obj
